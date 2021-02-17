@@ -70,10 +70,10 @@ object Dep {
             "androidx.appcompat:appcompat:1.2.0",
             "androidx.constraintlayout:constraintlayout:2.0.4",
             "androidx.legacy:legacy-support-v4:1.0.0",
-            "androidx.fragment:fragment-ktx:1.2.5")
+            "androidx.fragment:fragment-ktx:1.3.0")
         )
 
-        val navigation = "2.3.2"
+        val navigation = "2.3.3"
         libs["Navigation"] = hashMapOf(
             plugin to mutableListOf(
             "androidx.navigation:navigation-safe-args-gradle-plugin:${navigation}"),
@@ -91,7 +91,7 @@ object Dep {
             "com.squareup.okhttp3:logging-interceptor:4.9.0")
         )
 
-        val lifecycle = "2.2.0"
+        val lifecycle = "2.3.0"
         libs["Lifecycle"] = hashMapOf(
             impl to mutableListOf(
                 "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle}",
