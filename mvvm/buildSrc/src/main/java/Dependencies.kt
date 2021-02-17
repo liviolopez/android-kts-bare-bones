@@ -98,6 +98,30 @@ object Dep {
                 "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycle}")
         )
 
+        val room = "2.2.6"
+        libs["Room"] = hashMapOf(
+            impl to mutableListOf(
+                "androidx.room:room-ktx:${room}",
+                "androidx.room:room-runtime:${room}"),
+
+            kapt to mutableListOf(
+                "androidx.room:room-compiler:${room}")
+        )
+
+        //val daggerHilt = "X.X.X"
+        libs["DaggerHilt"] = hashMapOf(
+            plugin to mutableListOf(
+                "com.google.dagger:hilt-android-gradle-plugin:2.30-alpha"),
+
+            impl to mutableListOf(
+                "com.google.dagger:hilt-android:2.30.1-alpha",
+                "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"),
+
+            kapt to mutableListOf(
+                "com.google.dagger:hilt-android-compiler:2.28.1-alpha",
+                "androidx.hilt:hilt-compiler:1.0.0-alpha03")
+        )
+
         val glide = "4.11.0"
         libs["Glide"] = hashMapOf(
             impl to mutableListOf(

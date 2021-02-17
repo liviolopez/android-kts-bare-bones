@@ -6,6 +6,7 @@ buildscript {
     dependencies {
         classpath(Dep.plugin("Kotlin"))
         classpath(Dep.plugin("Gradle"))
+        classpath(Dep.plugin("DaggerHilt"))
         classpath(Dep.plugin("Navigation"))
     }
 }
